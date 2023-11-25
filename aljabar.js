@@ -32,7 +32,7 @@ const button4 = document.querySelector('td#td4tabel1 button');
 button4.addEventListener('click', function(){
     const tr = document.getElementById('tr4tabel2');
     const tdBaru = document.createElement('td');
-    const gambar = new Image(60,60);
+    const gambar = new Image(70,70);
     gambar.src = 'img/kuning.png';
     tdBaru.appendChild(gambar);
     tr.appendChild(tdBaru);
@@ -43,7 +43,7 @@ const button5 = document.querySelector('td#td5tabel1 button');
 button5.addEventListener('click', function(){
     const tabel = document.getElementById('tr3tabel2');
     const trBaru = document.createElement('tr');
-    const gambar = new Image (60,60);
+    const gambar = new Image (70,70);
     gambar.src = 'img/kuning.png';
     trBaru.appendChild(gambar);
     tabel.appendChild(trBaru);
