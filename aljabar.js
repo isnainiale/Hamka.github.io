@@ -1,17 +1,8 @@
-// const button1 = document.querySelector('td#td1tabel1 button');
-// button1.addEventListener('click', function(){
-//     const tr = document.getElementById('tr1tabel2');
-//     const tdBaru = document.createElement('td');
-//     const gambar = new Image( 200,200);
-//     gambar.src = 'img/hijau.png';
-//     tdBaru.appendChild(gambar);
-//     tr.appendChild(tdBaru);
-// });
-
 const button2 = document.querySelector('td#td2tabel1 button');
 button2.addEventListener('click', function(){
     const tr = document.getElementById('tr2tabel2');
     const tdBaru = document.createElement('td');
+    gambarKuning.src = 'img/kuning.png';
     const gambar = new Image(70,200);
     gambar.src = 'img/merah.png';
     tdBaru.appendChild(gambar);
@@ -49,6 +40,8 @@ button5.addEventListener('click', function(){
     tabel.appendChild(trBaru);
 });
 
+
+
 document.getElementById("open-modal").addEventListener("click", function() {
   document.getElementById("overlay").style.display = "block";
 })
@@ -81,21 +74,3 @@ const btn_menu = document.querySelector(".btn-menu");
       if (localData == null) {
         localStorage.setItem("theme", "light");
       }
-
-      // if (localData == "dark") {
-      //   document.body.classList.add("dark-mode");
-      //   theme_ball.classList.add("dark");
-      // } else if (localData == "light") {
-      //   document.body.classList.remove("dark-mode");
-      //   theme_ball.classList.remove("dark");
-      // }
-
-      btn_theme.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        theme_ball.classList.toggle("dark");
-        if (document.body.classList.contains("dark-mode")) {
-          localStorage.setItem("theme", "dark");
-        } else {
-          localStorage.setItem("theme", "light");
-        }
-      });
