@@ -87,14 +87,15 @@ section {
 }
 
 h2 {
-    font-family: comic sans ms;
-    font-family: 800; 
+    font-family: 'Comic Sans MS', sans-serif; /* Ganti dengan nama font yang benar */
+    font-weight: 800; /* Ganti font-weight agar sesuai */
     font-size: 45px;
     margin-bottom: 20px;
     color: #102C57;
     width: 100%;
-    line height: 50px;
+    line-height: 50px; /* Gunakan tanda hubung (-) pada line-height */
 }
+
 
 .img1 {
     width: 45%;
