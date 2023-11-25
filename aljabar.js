@@ -30,23 +30,25 @@ button3.addEventListener('click', function(){
 
 const button4 = document.querySelector('td#td4tabel1 button');
 button4.addEventListener('click', function(){
-    const tr = document.getElementById('tr4tabel2');
-    const tdBaru = document.createElement('td');
-    const gambar = new Image(70,70);
-    gambar.src = 'img/kuning.png';
-    tdBaru.appendChild(gambar);
-    tr.appendChild(tdBaru);
+    const tr = document.createElement('td');
+    tr.style.width = '70px';
+    tr.style.height = '70px';
+    tr.style.background = 'url(img/kuning.png)'
+    tr.style.backgroundSize = 'cover'
+    const tdBaru = document.getElementById('tr4tabel2');
+    tdBaru.appendChild(tr);
 });
 
 
 const button5 = document.querySelector('td#td5tabel1 button');
 button5.addEventListener('click', function(){
-    const tabel = document.getElementById('subtabel2');
-    const trBaru = document.createElement('tr');
-    const gambar = new Image (70,70);
-    gambar.src = 'img/kuning.png';
-    trBaru.appendChild(gambar);
-    tabel.appendChild(trBaru);
+  const tr = document.createElement('td');
+  tr.style.width = '70px';
+  tr.style.height = '70px';
+  tr.style.background = 'url(img/kuning.png)'
+  tr.style.backgroundSize = 'cover'
+  const tdBaru = document.getElementById('subtabel2');
+  tdBaru.appendChild(tr);
 });
 
 document.getElementById("open-modal").addEventListener("click", function() {
